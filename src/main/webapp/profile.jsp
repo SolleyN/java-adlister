@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-    <%@ include file="partials/navbar.jsp" %>
+<%--    <%@ include file="partials/navbar.jsp" %>--%>
 </header>
 
 <main>
@@ -16,7 +16,7 @@
 </main>
 
 <footer>
-    <%@ include file="partials/footer.jsp" %>
+<%--    <%@ include file="partials/footer.jsp" %>--%>
 </footer>
 </body>
 </html>
