@@ -22,7 +22,8 @@
     if (username != null && username.equals("admin") && password != null && password.equals("password")) {
         response.sendRedirect("profile.jsp");
     } else if (username != null || password != null) {
-        response.sendRedirect("login.jsp");
+//        response.sendRedirect("login.jsp");
+        out.println("<h2 style=\"color: red\">Invalid username or password</h2>");
     }
 %>
 </body>

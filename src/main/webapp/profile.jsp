@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <title>Profile Page</title>
 </head>
-<body>
+<body> <%@ include file="partials/navbar.jsp" %>
 <header>
-<%--    <%@ include file="partials/navbar.jsp" %>--%>
+
 </header>
 
 <main>
