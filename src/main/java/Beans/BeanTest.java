@@ -1,3 +1,4 @@
+package Beans;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ public class BeanTest {
         Album album2 = new Album(2, "Back in Black", "AC/DC", 1980);
 
 
-        // Instantiate some Author objects
+
         Author author1 = new Author(1, "William Shakespeare", "English playwright and poet");
         Author author2 = new Author(2, "Oscar Wilde", "Irish playwright, novelist, and poet");
         Author author3 = new Author(3, "Albert Einstein", "German-born theoretical physicist");
@@ -22,7 +23,6 @@ public class BeanTest {
         Quote quote3 = new Quote(3, "I have nothing to declare except my genius.", author3);
         Quote quote4 = new Quote(4, "In this life we are either kings or pawns, emperors and fools", author4);
 
-        // Store multiple instances of Quote in an ArrayList
         List<Quote> quotes = new ArrayList<>();
         quotes.add(quote1);
         quotes.add(quote2);
@@ -31,9 +31,9 @@ public class BeanTest {
 
 
         for (Quote quote : quotes) {
-            System.out.println("Quote: " + quote.getContent());
+            System.out.println("Beans.Quote: " + quote.getContent());
 
-            System.out.println("Author: " + quote.getAuthor().getName());
+            System.out.println("Beans.Author: " + quote.getAuthor().getName());
 
         }
     }

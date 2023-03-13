@@ -1,3 +1,7 @@
+package Beans;
+
+import Beans.Author;
+
 public class Quote {
     private int id;
     private String content;
