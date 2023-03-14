@@ -15,7 +15,7 @@
     <title>List of Ads</title>
 </head>
 <body>
-<marquee><h1>Ads</h1></marquee>
+<h1>Ads</h1>
 
 <table>
     <thead>

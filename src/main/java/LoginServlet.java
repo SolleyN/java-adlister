@@ -18,14 +18,14 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         if (username.equals("admin") && password.equals("password")) {
-            request.getSession().setAttribute("username", username);
-            response.sendRedirect("/ads");
+//            request.getSession().setAttribute("username", username);
+            response.sendRedirect("/profile.jsp");
         } else {
-            request.setAttribute("error", "Invalid login");
+//            request.setAttribute("error", "Invalid login");
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         }
 
-        request.getRequestDispatcher("/login.jsp").forward(request, response);
+
     }
 
 }

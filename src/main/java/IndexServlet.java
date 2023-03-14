@@ -16,6 +16,7 @@ public class IndexServlet extends HttpServlet {
             throws ServletException, IOException {
 
         Ads adsdao = DaoFactory.getAdsDao();
+
         List<Ad> ads = adsdao.all();
         request.setAttribute("ads", ads);
 
