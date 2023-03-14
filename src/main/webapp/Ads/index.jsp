@@ -12,10 +12,10 @@
 
 <html>
 <head>
-    <title>Ads</title>
+    <title>List of Ads</title>
 </head>
 <body>
-<h1>Ads</h1>
+<marquee><h1>Ads</h1></marquee>
 
 <table>
     <thead>
@@ -26,12 +26,12 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${ads}" var="ad">
 
-            ${ad.title}
-            ${ad.description}
-
-
+<ul> <c:forEach items="${ads}" var="ad">
+    <li>   <h2>${ad.title} </h2>
+        <p>  ${ad.description}</p>
+         </li>
+</ul>
 
 
 
