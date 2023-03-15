@@ -14,7 +14,12 @@
     <jsp:include page="../../partials/navbar.jsp" />
 
     <div class="container">
-        <h1>Viewing your profile.</h1>
+
+        <% String username = (String) session.getAttribute("user"); %>
+        <h1>Welcome <%= username %>!</h1>
+        <button onclick="location.href='LogoutServlet'">Logout</button>
+
+
     </div>
 
 </body>
