@@ -17,7 +17,7 @@
 
         <% String username = (String) session.getAttribute("user"); %>
         <h1>Welcome <%= username %>!</h1>
-        <button onclick="location.href='LogoutServlet'">Logout</button>
+
 
 
     </div>
